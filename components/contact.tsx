@@ -1,5 +1,7 @@
+'use client'
 import { Phone, Mail, MapPin, MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { usePathname } from "next/navigation"
 
 const contactInfo = [
   { icon: Phone, label: "Call", value: "+234 913 900 8165" },
@@ -9,6 +11,7 @@ const contactInfo = [
 ]
 
 export function Contact() {
+    const pathname = usePathname()
   return (
     <section id="contact" className="bg-secondary">
       <div className="mx-auto max-w-7xl px-6 py-16 lg:py-24">
@@ -118,14 +121,16 @@ export function Contact() {
           </form>
         </div>
 
-<div className="map-box">
-        <iframe
-              src={`https://www.google.com/maps?q="Plot No 141 Zone D09 Kagini Abuja, Gbazango Area Office"&output=embed`}
-              loading="lazy"
-              title="Office location map"
-              referrerPolicy="no-referrer-when-downgrade"
-        />
-</div>
+{pathname !== "/" && (
+  <div className="map-box">
+    <iframe
+      src="https://www.google.com/maps?q=Plot%20No%20141%20Zone%20D09%20Kagini%20Abuja%2C%20Gbazango%20Area%20Office&output=embed"
+      loading="lazy"
+      title="Office location map"
+      referrerPolicy="no-referrer-when-downgrade"
+    />
+  </div>
+)}
 
       </div>
     </section>
