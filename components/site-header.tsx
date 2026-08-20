@@ -24,11 +24,11 @@ export function SiteHeader() {
           <div className="flex items-center gap-6">
             <span className="flex items-center gap-2">
               <Phone className="size-3.5 text-accent" aria-hidden="true" />
-              +234 803 123 4567
+              +234 913 900 8165
             </span>
             <span className="flex items-center gap-2">
               <Mail className="size-3.5 text-accent" aria-hidden="true" />
-              hello@swiftpackpro.ng
+              info@swiftpackprocleaners.com
             </span>
             <span className="flex items-center gap-2">
               <Clock className="size-3.5 text-accent" aria-hidden="true" />

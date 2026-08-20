@@ -1,10 +1,11 @@
-import { Phone, Mail, MapPin } from "lucide-react"
+import { Phone, Mail, MapPin, MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const contactInfo = [
-  { icon: Phone, label: "Call or WhatsApp", value: "+234 803 123 4567" },
-  { icon: Mail, label: "Email us", value: "hello@swiftpackpro.ng" },
-  { icon: MapPin, label: "Visit us", value: "Serving Lagos, Abuja, Port Harcourt & more" },
+  { icon: Phone, label: "Call", value: "+234 913 900 8165" },
+  { icon: MessageCircle, label: "WhatsApp", value: "+234 907 292 4738" },
+  { icon: Mail, label: "Email us", value: "info@swiftpackprocleaners.com" },
+  { icon: MapPin, label: "Visit us", value: "Plot No 141 Zone D09 Kagini Abuja, Gbazango Area Office" },
 ]
 
 export function Contact() {
@@ -116,6 +117,16 @@ export function Contact() {
             </Button>
           </form>
         </div>
+
+<div className="map-box">
+        <iframe
+              src={`https://www.google.com/maps?q="Plot No 141 Zone D09 Kagini Abuja, Gbazango Area Office"&output=embed`}
+              loading="lazy"
+              title="Office location map"
+              referrerPolicy="no-referrer-when-downgrade"
+        />
+</div>
+
       </div>
     </section>
   )

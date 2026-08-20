@@ -16,7 +16,7 @@ export default function ContactPage() {
       <SiteHeader />
       <main>
         <Contact />
-        <FAQ />
+        {/* <FAQ /> */}
       </main>
       <SiteFooter />
     </>
