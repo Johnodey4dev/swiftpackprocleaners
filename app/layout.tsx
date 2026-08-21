@@ -17,10 +17,9 @@ const body = Manrope({
 })
 
 export const metadata: Metadata = {
-  title: 'Swiftpack Pro | Professional Cleaning Services in Nigeria',
+  title: 'Swiftpack Pro | Professional Cleaning Services in Abuja',
   description:
-    'Swiftpack Pro delivers affordable, background-checked home, office, and compound cleaning across Lagos, Abuja, Port Harcourt and beyond. Book on WhatsApp today.',
-  generator: 'v0.app',
+    'Swiftpack Pro delivers affordable, background-checked home, office, and compound cleaning across Abuja. Book on WhatsApp today.',
   icons: {
     icon: [
       {
