@@ -4,6 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { Phone, Mail, Clock, Menu, X, Sparkles } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -45,9 +46,15 @@ export function SiteHeader() {
       <div className="border-b border-border bg-background/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <Link href="/" className="flex items-center gap-2">
-            <span className="flex size-10 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-              <Sparkles className="size-5" aria-hidden="true" />
-            </span>
+            <div className="flex size-10 items-center overflow-hidden justify-center rounded-lg bg-primary text-primary-foreground">
+               <Image
+                       src="/images/brand.png"
+                       alt="The Swiftpack Pro logo"
+                       width={65}
+                       height={65}
+                       className="h-full w-full object-cover"
+                     />
+            </div>
             <span className="font-heading text-xl font-extrabold leading-none tracking-tight text-foreground">
               Swiftpack<span className="text-primary">Pro</span>
             </span>
