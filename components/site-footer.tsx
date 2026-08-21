@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Sparkles, Globe, Send, AtSign, MessageCircle } from "lucide-react"
+import Image from "next/image"
 
 const columns = [
   {
@@ -25,9 +26,15 @@ export function SiteFooter() {
         <div className="grid gap-10 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
           <div>
             <Link href="/" className="flex items-center gap-2">
-              <span className="flex size-10 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-                <Sparkles className="size-5" aria-hidden="true" />
-              </span>
+                <div className="flex size-10 items-center overflow-hidden justify-center rounded-lg bg-primary text-primary-foreground">
+                             <Image
+                                     src="/images/brand.png"
+                                     alt="The Swiftpack Pro logo"
+                                     width={65}
+                                     height={65}
+                                     className="h-full w-full object-cover"
+                                   />
+                          </div>
               <span className="font-heading text-xl font-extrabold tracking-tight">
                 Swiftpack<span className="text-accent">Pro</span>
               </span>
